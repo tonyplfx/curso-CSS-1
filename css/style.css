@@ -1,0 +1,17 @@
+
+
+@import url("otra-hoja.css")
+
+h1{
+  color: orangered;
+  background-color: skyblue;
+}
+
+p{
+  color: rgb(84, 84, 145);
+}
+/* Colocar un selector con id, se considera como un antipatrón*/
+
+#parrafo-dos{
+  background-color: skyblue;
+}
