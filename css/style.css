@@ -1,17 +1,91 @@
 
-
-@import url("otra-hoja.css")
-
 h1{
-  color: orangered;
-  background-color: skyblue;
+  border-color: greenyellow;
+  border-style: solid;
+  text-align: center;
+  color: greenyellow;
+  background-color: black;
 }
 
 p{
   color: rgb(84, 84, 145);
 }
-/* Colocar un selector con id, se considera como un antipatrón*/
 
+/* Colocar un selector con id, se considera como un antipatrón, además de que tienen más peso que otro selectores*/
 #parrafo-dos{
   background-color: skyblue;
+}
+
+/*Dar estilos con clases nos permite reutilzar nuestro codigo CSS*/
+.text-20{
+  font-size: 20px;
+}
+
+.text-32{
+  font-size: 32px;
+}
+
+.bg-skyblue{
+  background-color: skyblue;
+}
+
+.bg-steelblue{
+  background-color: steelblue;
+}
+
+.text-white{
+  color: white;
+}
+
+.hijos-directos>li{
+  background-color: thistle;
+}
+
+.hijos-descendientes b{
+  background-color: thistle;
+}
+/*Los selectores de hermanos van a aplicar a los elementos que son hermanos y que estén por debajo del elemento de referencia */
+.hermanos-general~li {
+ background-color: thistle ;
+}
+
+.hermanos-adyacentes+li {
+ background-color: thistle ;
+}
+
+/*Selectores de atributos*/
+.selectores-atributos a[href]{
+  color: orangered;
+}
+
+.selectores-atributos a[target="_blank"]{
+  font-weight: bold;
+}
+/*El comodin del * aplica el estilo si contiene la palabra en cuestion */
+.selectores-atributos a[href*="jonmircha"]{
+  font-size: 24px;
+}
+
+/*El comodin del ^ aplica el estilo si contiene el termino en cuestion, solo si está en el inicio del selector*/
+
+.selectores-atributos a[href^="http://"]{
+  text-decoration: none;
+}
+
+/*El comodin del $ se aplica a cualquier elemento el cual termine con el elemento seleccionado*/
+
+.selectores-atributos a[href$="http://"]{
+  text-decoration: none;
+}
+
+/*El comodin del ~ se aplica a cualquier elemento el cual termine con el elemento seleccionado*/
+
+.selectores-atributos a[class~="cursos"]{
+  background-color: midnightblue;
+}
+
+/*El comodin del  se aplica a cualquier elemento el cual termine con el elemento seleccionado*/
+
+.selectores-atributos a[class~="cursos"]{
+  background-color: midnightblue;
 }

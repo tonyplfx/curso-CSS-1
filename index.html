@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>curso de css</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+
 </head>
+
 <body>
+<article id="temario-css">
   <h1>Aprendiedo css</h1>
   <p><i style="font-weight: bold; color: orangered;">Cascading Style Sheets</i>Hojas de estilo en cascada</p>
-<h2 id="temario-css">Temario del curso</h2>
+
+
+<hr>
+<h2>Temario del curso</h2>
 <ul>
   <li> <a href="index.html#selectores-basicos">Selectores básicos</a> </li>
-  <li></li>
+  <li> <a href="index.html#selectores-avanzados">selectores Avanzados</a> </li>
+  <li> <a href=""></a> </li>
 </ul>
+</article>
 <hr>
+
 <article id="selectores-basicos">
   <h2>Selectores Básicos</h2>
 
@@ -23,9 +39,68 @@
 <p id="parrafo-dos">
    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nisi dolorem numquam veritatis, reprehenderit totam suscipit alias, asperiores ipsa repudiandae atque hic et, aliquid earum sunt. Et reprehenderit temporibus porro?</p>
 
-<p class="text-32"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea aliquid eveniet incidunt suscipit consequatur deleniti neque dolores, quidem voluptates culpa, sint sunt commodi pariatur possimus unde quis, perferendis deserunt.</p>
-  <a href="index.html#temario-css">🆙</a>
- 
+<p class="text-32 bg-skyblue"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea aliquid eveniet incidunt suscipit consequatur deleniti neque dolores, quidem voluptates culpa, sint sunt commodi pariatur possimus unde quis, perferendis deserunt.
+</p>
+
+<p class="text-20 bg-steelblue text-white">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, nesciunt modi necessitatibus quidem quaerat magnam provident excepturi minima voluptatibus sequi, corporis adipisci qui iste praesentium est dolor mollitia numquam nemo.
+</p>
+
+<p class="text-32 bg-steelblue text-white">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est incidunt illum, nihil minima odio excepturi aut culpa tempore illo fugit corporis laboriosam optio itaque consequuntur harum aliquid quo distinctio nisi?
+</p>
+
+  <a href="index.html#temario-css">🆙</a> 
 </article>
+<hr>
+<article id="selectores-avanzados">
+  <h2>Temas selectores avanzados</h2>
+  <h3>Selesctores de hijos</h3>
+  <h4>Selectores de hijos derectos</h4>
+
+  <ul class="hijos-directos" >
+    <li><b>Primavera</b></li>
+    <li><b>Verano </b></li>
+    <li><b>Otoño</b></li>
+    <li><b>Invierno</b></li>
+  </ul>
+
+  <h4>Selectores d hijos descendientes</h4>
+    <ul class="hijos-descendientes" >
+    <li><b>Primavera</b></li>
+    <li><b>Verano </b></li>
+    <li><b>Otoño</b></li>
+    <li><b>Invierno</b></li>
+  </ul>
+  <h3>Selectores de Hermanos</h3>
+  <h4>Selector de hermanos general (general)</h4>
+    <ul>
+    <li><b>Primavera</b></li>
+    <li class="hermanos-general"><b>Verano </b></li>
+    <li><b>Otoño</b></li>
+    <li><b>Invierno</b></li>
+  </ul>
+  <h4>Selector de hermanos general adyacente</h4>
+     <ul>
+    <li><b>Primavera</b></li>
+    <li class="hermanos-adyacentes"><b>Verano </b></li>
+    <li><b>Otoño</b></li>
+    <li><b>Invierno</b></li>
+  </ul>
+  <h3>Selectores de etributos</h3>
+  <nav class="selectores-atributos">
+    <ul>
+      <li><a href="http://jonmircha.com" target="_blank">Inicio</a></li>
+      <li><a class="menu-item cursos button" href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+      <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+      <li><a href="https://jonmircha.com/mentoria" target="_blank">Mentoria</a></li>
+      <li><a href="http://jonmircha.com/hola" target="_blank">Hola</a></li>
+      <li><a href="index.html#temario-css">Regresar al temario</a></li>
+    </ul>
+  </nav>
+  <a href="index.html#temario-css">🆙</a>
+</article>
+<hr>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
