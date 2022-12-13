@@ -89,3 +89,48 @@ p{
 .selectores-atributos a[class~="cursos"]{
   background-color: midnightblue;
 }
+
+/*Selector universal*/
+
+*{
+  font-family: sans-serif;
+}
+
+.selector-universales * {
+  font-size: 24px;
+}
+
+/*Dan estilos dependiendo del contexto, posición o estado del elemento*/
+
+/*Lo que se tiene en este selector es que a todos los elementos requeridos de mi pseudo clase form, aplicamos un borde color amarillo*/
+.form-pseudoclases *:required{
+    border-color: yellow ;
+}
+
+.form-pseudoclases *:valid{
+  border-color: green;
+}
+
+.form-pseudoclases *:invalid{
+  border-color: red;
+}
+
+.form-pseudoclases *:focus{
+  background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled{
+  background-color: pink;
+}
+
+.menu-pseudoclases a:visited{
+  color: olive;
+}
+
+.menu-pseudoclases a:hover {
+  color: orange;
+}
+
+#subir:hover{
+  font-size: 40px;
+}
