@@ -134,3 +134,23 @@ p{
 #subir:hover{
   font-size: 40px;
 }
+
+.lista-pseudoclases li:first-child{
+  color:green;
+}
+
+.lista-pseudoclases li:last-child{
+  color:violet;
+}
+
+.lista-pseudoclases li:nth-child(3){
+  color:navy;
+}
+/*Aumenta los patrones de 4 en cuatro numeros*/
+.lista-pseudoclases li:nth-child(4n){
+  font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n+1){
+  font-weight: bold;
+}
