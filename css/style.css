@@ -154,3 +154,11 @@ p{
 .lista-pseudoclases li:nth-child(3n+1){
   font-weight: bold;
 }
+
+.saga-geminis::after{
+  content:"👬";
+}
+
+.saga-geminis::before{
+  content:"♊";
+}
