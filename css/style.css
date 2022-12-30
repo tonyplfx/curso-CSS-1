@@ -162,3 +162,13 @@ p{
 .saga-geminis::before{
   content:"♊";
 }
+
+.saga-precio::before{
+  content:"💲";
+}
+
+.saga-precio::after {
+  content:"USD";
+  font-weight: bold;
+}
+
