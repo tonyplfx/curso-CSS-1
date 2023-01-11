@@ -172,3 +172,6 @@ p{
   font-weight: bold;
 }
 
+.ejemploclases :first-child{
+  width: 1000px;
+}
