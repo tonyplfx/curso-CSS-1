@@ -7,6 +7,13 @@ h1{
   background-color: black;
 }
 
+h2{
+  border-style: solid;
+  border-width: 0.15cm;
+  border-color: black;
+  box-shadow: #1b7512 -5px -5px 10px 2px;
+}
+
 p{
   color: rgb(84, 84, 145);
 }
@@ -26,11 +33,11 @@ p{
 }
 
 .bg-skyblue{
-  background-color: skyblue;
+  background-color: rgb(68, 145, 61);
 }
 
 .bg-steelblue{
-  background-color: steelblue;
+  background-color: rgb(86, 145, 84);
 }
 
 .text-white{
@@ -38,15 +45,15 @@ p{
 }
 
 .hijos-directos>li{
-  background-color: thistle;
+  background-color: rgb(74, 160, 95);
 }
 
 .hijos-descendientes b{
-  background-color: thistle;
+  background-color: rgb(191, 216, 192);
 }
 /*Los selectores de hermanos van a aplicar a los elementos que son hermanos y que estén por debajo del elemento de referencia */
 .hermanos-general~li {
- background-color: thistle ;
+ background-color: rgb(195, 216, 191) ;
 }
 
 .hermanos-adyacentes+li {
@@ -172,6 +179,76 @@ p{
   font-weight: bold;
 }
 
-.ejemploclases :first-child{
-  width: 1000px;
+/*Tenemos un parrafo el cual, tiene como carcateristica el tamaño el cual puede desbordarse y con la caracteristica de overflow 
+podremos organizarlo de una mejor manera
+Asi como tambien la caracteristica del margin que establece un margen de 20pixeles*/
+
+#segundoparrafo{
+   width: 1000px;
+   height: 200px;
+   overflow: scroll;
+   margin: 20px;
+}
+/*Tenemos el cambio de color */
+#ejemplosdefondo :nth-child(2){
+  width: 500px;
+  height: 100px;
+  background-color: rgb(156, 126, 44);
+}
+
+h2{
+  text-align: center;
+  background-image: url("fondolargo.jpg");
+}
+
+#ejemplosdefondo p{
+  width: 1200px;
+  height: 200px;
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+  background-image: url("imagenes/fondolargo.jpg");
+}
+
+#ejemplodeborde :nth-child(2) {
+  border-style:dashed;
+  border-width: 0.15cm;
+  border-color: rgb(252, 3, 3);
+}
+
+#ejemplodeborde :nth-child(3){
+  border-style: double;
+  border-width: 0.15cm;
+}
+
+#ejemplodeborde :nth-child(4){
+   border-style:dotted;
+   border-width: 0.15cm;
+}
+
+#ejemplodeborde :nth-child(5){
+   border-style:groove;
+   border-width: 0.15cm;
+}
+
+#ejemplodeborde :nth-child(6){
+   border-style:ridge;
+   border-width: 0.15cm;
+}
+
+#ejemplodeborde :nth-child(7){
+   border-style:inset;
+   border-width: 0.15cm;
+}
+
+#ejemplodeborde :nth-child(8){
+  border: 0.20cm double #9e065f;
+  border-radius: 10px;
+  outline-style: dashed;
+  outline-width: 0.05cm;
+}
+
+#ejemplodeborde{
+  border-width: 0.10cm;
+  border-style: solid;
+  border-color: black;
 }
