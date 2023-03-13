@@ -106,3 +106,12 @@ li + li{
   font-style: italic;
  }
 
+ /*Selector universal*/
+
+ *{
+  font-family: sans-serif;
+ }
+
+ .selector-universal *{
+  font-size: 40px;
+ }
