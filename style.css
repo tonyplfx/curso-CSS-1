@@ -1,0 +1,108 @@
+html{
+  scroll-behavior: smooth;
+}
+/*Selectores Basicos
+
+1.- Etiquetas - son elementos html
+2.- Identificadores - atributo id #
+3.- Clases Atributo Class .
+
+*/
+
+p {
+  color: midnightblue;
+}
+
+/*Dar estilos con id se considera un antipatron, o sea, una mala practica, por lo regular no lo utilizaremos mas que identificar elementos especificos dentro del codigo de html */
+#parrafo-dos {
+  background-color: skyblue;
+}
+
+/*Las ventajas de las clases:
+ 1.- Dar estilos con clases nos permitira reutilizar codigo para dar diferentes estilos en la misma hoja de cascada.
+ 3.- Podremos asignar mas de dos nombres de clases al mismo elemento html. */
+
+ .bg-skyblue{
+  background-color: skyblue;
+}
+
+ .bg-steelblue{
+  background-color: steelblue;
+ }
+
+ .text-20 {
+    font-size: 20px;
+ }
+
+ 
+ .text-32{
+    font-size: 32px;
+ }
+
+ .text-white{
+  color: white;
+ }
+
+/*Selectores avanzados que tenemos hijos directos e hijos descendientes*/
+
+.hijos-directos > li{
+  background-color: thistle;
+}
+
+.hijos-descendientes b{
+  background-color:  thistle;
+}
+
+/*Selectores de hermanos*/
+/*El segundo elemento que tengamos en nuestra instruccioón de css será el elemento al cual se quiere aplicar la propiedad*/
+
+.hermanos-general ~ li{
+  background-color: thistle;
+}
+
+.hermanos-adyacente + li{
+  background-color: thistle;
+}
+/*En este caso el selector de hermanos adyacente aplicara el color a todos los li que sean adyacentes a otro li que esté por debajo de el y en el mismo nivel de jerarquia del codigo*/
+/*
+li + li{
+}
+*/
+
+ /*Selectores de atributos*/
+/*se tiene que poner entre corchetes el atributo que quieres seleccionar, de esta manera, podrás hacer una selección especifica por medio de los atributos que cada uno de estos elementos tengan, en este caso estamos seleccionando los elementos que tengan como atributo [href]*/
+ 
+ .selectores-atributos a[href] {
+  color: orange;
+ }
+/*Podemos llegar a ser más especificos en cuanto a la especifidad de los atributos por medio de las selecciones de los atributos target y blank que no son los unicos atributos a los cuales podemos hacer referencias, puede ser cualquier otro atributo que se tenga en un elemento*/
+
+ .selectores-atributos a[target="_blank"]{
+  font-weight: bold;
+ }
+
+ /*El comodin del * aplica el estilo si contiene el texto en cuestion en cualquier parte */
+ .selectores-atributos a[href*="jonmircha"]{
+  font-size: 24px;
+ }
+
+ /*El comodin del ^ aplica el estilo si contiene el texto en cuestion al inicio */
+ .selectores-atributos a[href^="http://"]{
+  text-decoration: none;
+ }
+
+/*El comodin del $ aplica el estilo si contiene el texto en cuestion al final */
+ .selectores-atributos a[href$=".com"]{
+  background-color: black;
+ }
+
+ /*El comodin del ~ aplica el estilo si contiene el texto en cuestion en una lista separada por espacios */
+ .selectores-atributos a[class~="cursos"]{
+  background-color: midnightblue;
+ }
+
+  /*El comodin del ~ aplica el estilo si contiene el texto en cuestion en una lista separada por espacios */
+ .selectores-atributos a[class|="menu"]{
+  font-style: italic;
+ }
+

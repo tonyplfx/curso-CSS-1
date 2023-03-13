@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Apunte de Selectores en CSS</title>
+</head>
+<body>
+  <h1>Aprendiendo css</h1>
+  <p><i>Cascading Style Sheets </i>- Hojas de Estilos de Cascadas</p>
+  <h2>Temario del curso</h2>
+  <u>
+    <li></li>
+    <li></li>
+  </u>
+  <hr>
+  <article id="selectores-basicos" >
+      <h2>Selectores Basicos</h2>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam culpa sit corporis facilis voluptate magni iusto expedita aliquam, perspiciatis minus officiis nam, animi earum quisquam odio optio possimus vel? Alias</p>
+
+      <p id="parrafo-dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error, quaerat velit nulla dignissimos deserunt veritatis facere atque commodi repellendus asperiores reprehenderit aliquam quod sint sapiente nam assumenda! Laborum, explicabo!</p>
+
+      <p class="text-32 bg-skyblue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nostrum numquam alias quaerat explicabo ratione libero ad molestiae! Incidunt facere optio magnam quas ipsam, quo iure repellendus esse quibusdam in.</p>
+
+      <p class="text-20 bg-steelblue text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente doloremque, maxime eos culpa vero nulla alias molestiae reprehenderit? Culpa asperiores iste labore! Voluptatem tenetur earum reiciendis aliquid. Repellendus, vitae!
+      </p>
+
+      <!--Imaginemos que queremos hacer una combinacion de las clases que ya tenemos dentro de nuestro codigo de html, como por ejemplo combinar la clase de text-20 con la de bg-skyblue y la de text-white-->
+      <p class="text-20 bg-skyblue text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium impedit vero voluptates sapiente fugit aliquid debitis in, perspiciatis beatae iste labore laudantium sunt possimus tempora soluta architecto, omnis illum eius.</p>
+  </article>
+  <hr>
+  <article id="selectores-avanzados">
+    <h2>Selectores Avanzados </h2>
+    <h4>Selectores de hijos</h4> 
+    <!--Dentro de este tema veremos las descendencias que podriamos encontrarnos dentro de nuestros documentos, los hijos dierectos que vamos a poder encontrar y los hijos de los hijos de algunas etiquetas
+    
+    Selectores de hijos descendientes, en este caso el elemento padre que tendremos sería el ul que es el elemento padre y sus descendientes son todas las demas sin embargo aunque el elemento b es descendiente de ul, no podía ser considerado como su hijo ya que este está precedido por el elemento li que es el hijo directo de ul-->
+
+    <h3>Selectores de hijos directos</h3>
+    <ul class="hijos-directos">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h3>Selectores de hijos descndientes</h3> 
+    <ul class="hijos-descendientes">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h3>Selectores de hermanos</h3>
+    <h4>slector de hermanos (En general)</h4>
+     <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-general"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h4>Selector de hermanos (Adyacente)</h4>
+     <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-adyacente"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h3>Selectores de atriubutos</h3>
+    <nav class="selectores-atributos">
+      <ul>
+        <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+        <li><a class="menu-item cursos button" href="http://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+        <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+        <li><a href="http://jonmircha.com/mentoria" target="_blank">Mentoria</a></li>
+        <li><a href="https://jonmircha.com/hola" target="_blank">Hola</a></li>
+        <!--En este caso el siguiente href no tiene el atributo target como lo tienen los otros, esto probocará que por medio de la selección de los atributos a la siguiente linea de codigo la dejen fuera-->
+        <li><a href="https://jonmircha.com/">Inicio</a></li>
+      </ul>
+    </nav>
+  </article>
+</body>
+</html>

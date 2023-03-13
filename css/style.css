@@ -1,4 +1,8 @@
-
+body{
+  background-image: url("imagenes/Estrellas.jpg");
+  color:white;
+  
+}
 h1{
   border-color: greenyellow;
   border-style: solid;
@@ -8,14 +12,18 @@ h1{
 }
 
 h2{
+  text-align: center;
   border-style: solid;
-  border-width: 0.15cm;
-  border-color: black;
+  border-width: 0.10cm;
+  border-color: greenyellows;
   box-shadow: #1b7512 -5px -5px 10px 2px;
+  border-radius: 10px;
+  color: white;
+  background: -webkit-linear-gradient(top, transparent, #1b7512);
 }
 
 p{
-  color: rgb(84, 84, 145);
+  color: rgb(255, 255, 255);
 }
 
 /* Colocar un selector con id, se considera como un antipatrón, además de que tienen más peso que otro selectores*/
@@ -196,11 +204,6 @@ Asi como tambien la caracteristica del margin que establece un margen de 20pixel
   background-color: rgb(156, 126, 44);
 }
 
-h2{
-  text-align: center;
-  background-image: url("fondolargo.jpg");
-}
-
 #ejemplosdefondo p{
   width: 1200px;
   height: 200px;
@@ -210,6 +213,7 @@ h2{
 }
 
 #ejemplodeborde :nth-child(2) {
+  font-color:white;
   border-style:dashed;
   border-width: 0.15cm;
   border-color: rgb(252, 3, 3);
@@ -247,8 +251,9 @@ h2{
   outline-width: 0.05cm;
 }
 
-#ejemplodeborde{
-  border-width: 0.10cm;
+#ejemplodesombras :nth-child(1){
   border-style: solid;
+  border-width: 0.30px;
   border-color: black;
 }
+
